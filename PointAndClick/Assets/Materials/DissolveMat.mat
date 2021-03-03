@@ -26,9 +26,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _CutoffHeight: 0
-    - _DissolveAmount: 0.348
-    - _EdgeWidth: 0.3
-    - _NoiseScale: 10
+    - _DissolveAmount: 1.01
+    - _EdgeWidth: 0.308
+    - _NoiseScale: 3.84
     - _NoiseStrength: 10
     m_Colors:
     - _AlbedoColor: {r: 1, g: 0, b: 0, a: 1}
