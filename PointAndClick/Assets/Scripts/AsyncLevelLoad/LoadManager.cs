@@ -8,8 +8,8 @@ namespace COMP1288.PointClick.Jin
     public class LoadManager : MonoBehaviour, ILoad
     {
         private AsyncOperation asyncLoadingOperation;
-        [SerializeField] private GameObject loadingScreen = null;
-        [SerializeField] private Slider progressBar = null;
+        [SerializeField] private GameObject loadingScreen;
+        [SerializeField] private Slider progressBar;
 
         private void Start()
         {
@@ -18,7 +18,6 @@ namespace COMP1288.PointClick.Jin
 
         public void LoadScene(string sceneName)
         {
-            loadingScreen.SetActive(true);
             asyncLoadingOperation = SceneManager.LoadSceneAsync(sceneName);
             StartCoroutine(LoadAsync(sceneName));
 

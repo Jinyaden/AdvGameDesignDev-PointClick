@@ -3,34 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
-namespace COMP1288.PointClick.Jin
+public class ClickMovement : MonoBehaviour
 {
-    public class ClickMovement : MonoBehaviour
+    private NavMeshAgent agent;
+
+    private void Awake()
     {
-        private NavMeshAgent agent;
+        agent = GetComponent<NavMeshAgent>();   
+    }
 
-        private void Awake()
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
         {
-            agent = GetComponent<NavMeshAgent>();
-        }
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
 
-        private void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
+            if (Physics.Raycast(ray, out hit))
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit))
+                if (hit.collider.tag == "Ground")
                 {
-                    if (hit.collider.tag == "Ground")
-                    {
-                        agent.SetDestination(hit.point); // move to point
-                    }
+                    agent.SetDestination(hit.point); // move to point
                 }
             }
         }
-
     }
+
 }
