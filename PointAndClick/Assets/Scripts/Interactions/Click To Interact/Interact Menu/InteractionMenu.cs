@@ -27,7 +27,7 @@ namespace COMP1288.PointClick.Jin
                     {
                         interactionType = hit.transform.gameObject.GetComponent<IInteractor>();
                         contextMenu.SetActive(true);
-                        transform.position = hit.transform.position + new Vector3(0, 0, -1f);
+                        transform.position = hit.transform.position + new Vector3(0, 0, -2f);
                         Debug.Log("Got Interactor!");
                     }
                     else if (interactionType != null)
