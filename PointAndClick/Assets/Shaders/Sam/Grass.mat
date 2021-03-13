@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Outline_Mat
-  m_Shader: {fileID: -6465566751694194690, guid: 3c0e7c7255be61a42ba988034803ceec,
+  m_Name: Grass
+  m_Shader: {fileID: -6465566751694194690, guid: 0b475acd05ec7de41ac8b5cf1682a27d,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -21,9 +21,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_43255DF7: 0.1
-    - Vector1_55097CA9: 0.5
-    - Vector1_B6C16AD: 0.25
-    - Vector1_BA8CD999: 1
+    - Vector1_6265EC24: 0.06
+    - Vector1_86893B26: 6
+    - Vector1_FCC2C7E6: 1
     m_Colors:
-    - Color_5BD181A1: {r: 0, g: 0, b: 0, a: 1}
+    - Vector2_1FE7DD52: {r: 6, g: 0, b: 0, a: 0}

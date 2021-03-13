@@ -40,7 +40,7 @@ namespace COMP1288.PointClick.Jin
 
         private void OnMouseExit() // when the player mouses out of this menu
         {
-            CloseMenu();
+            StartCoroutine(TurnOffUIAfterTime());
         }
 
         public void InteractWithObject()
@@ -57,6 +57,12 @@ namespace COMP1288.PointClick.Jin
             contextMenu.SetActive(false);
         }
 
+
+        IEnumerator TurnOffUIAfterTime()
+        {
+            yield return new WaitForSeconds(2f);
+            CloseMenu();
+        }
 
     }
 }
