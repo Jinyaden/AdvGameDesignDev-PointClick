@@ -1,4 +1,7 @@
-﻿public interface IInteractor
+﻿namespace COMP1288.PointClick.Jin
 {
-    void Interact();
+    public interface IInteractor
+    {
+        void Interact();
+    }
 }

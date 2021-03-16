@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICamera
+namespace COMP1288.PointClick.Jin
 {
-    void CameraFollow();
+    public interface ICamera
+    {
+        void CameraFollow();
+    }
 }

@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticFollow : MonoBehaviour, ICamera
+namespace COMP1288.PointClick.Jin
 {
-    private GameObject target;
-    [SerializeField] float x = 0f, y = 2f, z = -5f;
-
-    private void Awake()
+    public class StaticFollow : MonoBehaviour, ICamera
     {
-        target = GameObject.FindGameObjectWithTag("Player");
-    }
+        private GameObject target;
+        [SerializeField] float x = 0f, y = 2f, z = -5f;
 
-    public void CameraFollow()
-    {
-        Camera.main.transform.position = new Vector3(target.transform.position.x + x, target.transform.position.y + y, z);
+        private void Awake()
+        {
+            target = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        public void CameraFollow()
+        {
+            Camera.main.transform.position = new Vector3(target.transform.position.x + x, target.transform.position.y + y, z);
+        }
     }
 }

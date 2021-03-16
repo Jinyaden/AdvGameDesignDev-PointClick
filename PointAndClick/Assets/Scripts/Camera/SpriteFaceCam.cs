@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteFaceCam : MonoBehaviour
+namespace COMP1288.PointClick.Jin
 {
-
-    private void Update()
+    public class SpriteFaceCam : MonoBehaviour
     {
-        transform.rotation = Quaternion.Euler(0, Camera.main.transform.rotation.y, 0);
+        private void Update()
+        {
+            transform.rotation = Quaternion.Euler(0, Camera.main.transform.rotation.y, 0);
+        }
     }
 }

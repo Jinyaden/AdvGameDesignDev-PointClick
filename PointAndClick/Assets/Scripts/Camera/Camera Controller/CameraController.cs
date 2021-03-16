@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+namespace COMP1288.PointClick.Jin
 {
-    private ICamera myCam;
-
-    private void Awake()
+    public class CameraController : MonoBehaviour
     {
-        myCam = GetComponentInChildren<ICamera>();
-    }
+        private ICamera myCam;
 
-    private void Update()
-    {
-        myCam.CameraFollow();
+        private void Awake()
+        {
+            myCam = GetComponentInChildren<ICamera>();
+        }
+
+        private void Update()
+        {
+            myCam.CameraFollow();
+        }
     }
 }

@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroySelfInteraction : MonoBehaviour, IInteractor
+namespace COMP1288.PointClick.Jin
 {
-    public void Interact()
+    public class DestroySelfInteraction : MonoBehaviour, IInteractor
     {
-        Destroy(gameObject);
+        public void Interact()
+        {
+            Destroy(gameObject);
+        }
     }
 }

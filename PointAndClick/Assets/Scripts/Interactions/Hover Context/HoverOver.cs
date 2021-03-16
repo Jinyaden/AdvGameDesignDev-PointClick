@@ -3,29 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class HoverOver : MonoBehaviour
+namespace COMP1288.PointClick.Jin
 {
-    [SerializeField] private GameObject hoverTextPrefab = null;
-    [SerializeField] string messageToDisplay = "";
-    [SerializeField] float heightOffsetAmount = 1f;
-    private Vector3 heightOffset;
-    private GameObject prefab;
-    private void OnMouseEnter() // when moused over
+    public class HoverOver : MonoBehaviour
     {
-        heightOffset = this.transform.position + new Vector3(0, heightOffsetAmount, 0);
-        if (hoverTextPrefab != null)
+        [SerializeField] private GameObject hoverTextPrefab = null;
+        [SerializeField] string messageToDisplay = "";
+        [SerializeField] float heightOffsetAmount = 1f;
+        private Vector3 heightOffset;
+        private GameObject prefab;
+        private void OnMouseEnter() // when moused over
         {
-            prefab = Instantiate(hoverTextPrefab, heightOffset, Quaternion.identity);
-            prefab.GetComponent<TextMeshPro>().text = messageToDisplay;
+            heightOffset = this.transform.position + new Vector3(0, heightOffsetAmount, 0);
+            if (hoverTextPrefab != null)
+            {
+                prefab = Instantiate(hoverTextPrefab, heightOffset, Quaternion.identity);
+                prefab.GetComponent<TextMeshPro>().text = messageToDisplay;
+            }
+            else
+            {
+                Debug.Log("hoverTextPrefab is empty, please add the prefab to object: " + this.name);
+            }
         }
-        else
-        {
-            Debug.Log("hoverTextPrefab is empty, please add the prefab to object: " + this.name);
-        }
-    }
 
-    private void OnMouseExit() // when mouse isnt on this object
-    {
-        if(prefab != null) Destroy(prefab);
+        private void OnMouseExit() // when mouse isnt on this object
+        {
+            if (prefab != null) Destroy(prefab);
+        }
     }
 }

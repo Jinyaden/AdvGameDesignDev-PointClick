@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Highlighter : MonoBehaviour
+namespace COMP1288.PointClick.Jin
 {
-    [SerializeField] private Material highlightMat = null;
-    Material originalMat;
-    MeshRenderer meshRenderer;
-
-    private void Awake()
+    public class Highlighter : MonoBehaviour
     {
-        meshRenderer = GetComponent<MeshRenderer>();
-        originalMat = meshRenderer.material;
+        [SerializeField] private Material highlightMat = null;
+        Material originalMat;
+        MeshRenderer meshRenderer;
+
+        private void Awake()
+        {
+            meshRenderer = GetComponent<MeshRenderer>();
+            originalMat = meshRenderer.material;
+        }
+
+        private void OnMouseExit()
+        {
+            meshRenderer.material = originalMat;
+        }
+
+        private void OnMouseOver()
+        {
+            meshRenderer.material = highlightMat;
+        }
+
+
     }
-
-    private void OnMouseExit()
-    {
-        meshRenderer.material = originalMat;
-    }
-
-    private void OnMouseOver()
-    {
-        meshRenderer.material = highlightMat;
-    }
-
-
 }
