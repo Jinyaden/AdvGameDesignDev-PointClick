@@ -7,15 +7,9 @@ namespace COMP1288.PointClick.Jin
     public class DissolveInteraction : MonoBehaviour, IInteractor
     {
         [SerializeField] Material dissolveMaterial = null;
-        private MeshRenderer meshRenderer;
+        private MeshRenderer meshRenderer => GetComponent<MeshRenderer>();//get references to renderer
 
         [SerializeField] float dissolveSpeed = 1f;
-
-        private void Awake()
-        {
-            //get references to original material and renderer
-            meshRenderer = GetComponent<MeshRenderer>();
-        }
 
 
         public void Interact()

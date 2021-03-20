@@ -9,12 +9,12 @@ namespace COMP1288.PointClick.Jin
     {
         [SerializeField] private GameObject hoverTextPrefab = null;
         [SerializeField] string messageToDisplay = "";
-        [SerializeField] float heightOffsetAmount = 1f;
+        [SerializeField] float heightOffsetAmount = 1f, distanceOffsetAmount = 1f;
         private Vector3 heightOffset;
         private GameObject prefab;
         private void OnMouseEnter() // when moused over
         {
-            heightOffset = this.transform.position + new Vector3(0, heightOffsetAmount, 0);
+            heightOffset = this.transform.position + new Vector3(0, heightOffsetAmount, -distanceOffsetAmount);
             if (hoverTextPrefab != null)
             {
                 prefab = Instantiate(hoverTextPrefab, heightOffset, Quaternion.identity);
