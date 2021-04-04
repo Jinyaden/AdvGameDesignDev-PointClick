@@ -24,6 +24,7 @@ public class ClickMovement : MonoBehaviour
                 if (hit.collider.tag == "Ground")
                 {
                     agent.SetDestination(hit.point); // move to point
+                    Debug.Log("Moving to point: " + hit.point.ToString());
                 }
             }
         }
