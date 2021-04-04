@@ -7977,9 +7977,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FollowSpeed: 1
   xPos: 0
-  yPos: 5
-  zPos: -10
-  xRot: 3
+  yPos: 3
+  zPos: -5
+  xRot: 25
   yRot: 0
 --- !u!1001 &913483486
 PrefabInstance:
