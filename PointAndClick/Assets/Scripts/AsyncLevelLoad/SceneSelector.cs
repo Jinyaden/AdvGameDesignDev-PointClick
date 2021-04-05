@@ -6,19 +6,19 @@ namespace COMP1288.PointClick.Jin
 {
     enum loadlocations
     {
-        Forest, 
-        Beach,
-        Mountain,
-        Forest_Outer_Ruin,
-        Inner_Ruin,
-        Dungeon,
-        Secret_Dungeon_Door
+        Forest, Beach, Mountain, Forest_Outer_Ruin, Inner_Ruin,Dungeon, Secret_Dungeon_Door
     }
+
     //Scenes to go to are Beach, Forest, Mountain, Outer Ruins, Inner Ruins
-    public class SceneSelector : MonoBehaviour
+    public class SceneSelector : MonoBehaviour, IInteractor
     {
         [SerializeField] loadlocations locations;
         private Loader sceneLoader => FindObjectOfType<Loader>();
+
+        public void Interact()
+        {
+            LoadSelectedScene();
+        }
 
         //TODO: load scene depending on enum
         //TODO: Set player positions depending on enum place
@@ -28,25 +28,25 @@ namespace COMP1288.PointClick.Jin
             switch (locations)
             {
                 case loadlocations.Forest:
-                    sceneLoader.LoadSceneWithDissolve("Forest");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("Forest"));
                     break;
                 case loadlocations.Beach:
-                    sceneLoader.LoadSceneWithDissolve("Beach");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("Beach"));
                     break;
                 case loadlocations.Mountain:
-                    sceneLoader.LoadSceneWithDissolve("Mountain");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("Mountain"));
                     break;
                 case loadlocations.Forest_Outer_Ruin:
-                    sceneLoader.LoadSceneWithDissolve("OuterRuin");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("OuterRuins"));
                     break;
                 case loadlocations.Inner_Ruin:
-                    sceneLoader.LoadSceneWithDissolve("InnerRuin");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("InnerRuins"));
                     break;
                 case loadlocations.Dungeon:
-                    sceneLoader.LoadSceneWithDissolve("Dungeon");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("Dungeon"));
                     break;
                 case loadlocations.Secret_Dungeon_Door:
-                    sceneLoader.LoadSceneWithDissolve("InnerRuin");
+                    StartCoroutine(sceneLoader.LoadSceneWithDissolve("InnerRuins"));
                     break;
 
             }

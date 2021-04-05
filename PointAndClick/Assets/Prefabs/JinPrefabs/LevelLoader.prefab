@@ -649,5 +649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c08f48cdd533f4d9c653a035212942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneDissolveMat: {fileID: 2100000, guid: ae9beab9770f2144ea12f22bd3df9ee6, type: 2}
-  nameOfSceneToLoad: Forest
+  renderData: {fileID: 11400000, guid: 4a8e21d5c33334b11b34a596161b9360, type: 2}
+  featureName: CameraDissolve
+  sceneDissolveSpeed: 0.5

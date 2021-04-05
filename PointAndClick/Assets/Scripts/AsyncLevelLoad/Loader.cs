@@ -23,16 +23,16 @@ namespace COMP1288.PointClick.Jin
 
 
         //[SerializeField] Material mat = null;
-        [SerializeField] private float sceneDissolveSpeed = 1f;
+        [SerializeField] private float sceneDissolveSpeed = 0.5f;
 
 
 
         //[SerializeField] private string nameOfSceneToLoad = null;
-        ILoad loaderManager;
+        ILoad loaderManager => GetComponent<ILoad>();
 
         private void Awake() // make sure to look for ILoad <_<
         {
-            loaderManager = GetComponent<ILoad>();
+            //loaderManager = GetComponent<ILoad>();
             //urpAsset.scriptableRenderer
         }
 
@@ -65,6 +65,11 @@ namespace COMP1288.PointClick.Jin
         public void ExitGame()
         {
             Application.Quit();
+        }
+
+        public void LoadFromMainMenu()
+        {
+            SceneToLoadByName("Forest");
         }
 
         private bool TryGetFeature(out ScriptableRendererFeature feature)
