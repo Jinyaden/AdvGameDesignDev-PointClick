@@ -1,4 +1,4 @@
-﻿Shader "/Jin/ObjectDissolve"
+﻿Shader "Jin/Dissolve"
 {
     Properties
     {
@@ -101,6 +101,11 @@
 
             // Graph Functions
 
+            void Unity_Multiply_float(float4 A, float4 B, out float4 Out)
+            {
+                Out = A * B;
+            }
+
 
             float2 Unity_GradientNoise_Dir_float(float2 p)
             {
@@ -140,11 +145,6 @@
                 Out = A - B;
             }
 
-            void Unity_Multiply_float(float4 A, float4 B, out float4 Out)
-            {
-                Out = A * B;
-            }
-
             // Graph Vertex
             // GraphVertex: <None>
 
@@ -170,11 +170,14 @@
             SurfaceDescription SurfaceDescriptionFunction(SurfaceDescriptionInputs IN)
             {
                 SurfaceDescription surface = (SurfaceDescription)0;
+                float4 _Property_974E60FE_Out_0 = _AlbedoColor;
                 float4 _SampleTexture2D_CD2A3157_RGBA_0 = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, IN.uv0.xy);
                 float _SampleTexture2D_CD2A3157_R_4 = _SampleTexture2D_CD2A3157_RGBA_0.r;
                 float _SampleTexture2D_CD2A3157_G_5 = _SampleTexture2D_CD2A3157_RGBA_0.g;
                 float _SampleTexture2D_CD2A3157_B_6 = _SampleTexture2D_CD2A3157_RGBA_0.b;
                 float _SampleTexture2D_CD2A3157_A_7 = _SampleTexture2D_CD2A3157_RGBA_0.a;
+                float4 _Multiply_EE7F5759_Out_2;
+                Unity_Multiply_float(_Property_974E60FE_Out_0, _SampleTexture2D_CD2A3157_RGBA_0, _Multiply_EE7F5759_Out_2);
                 float _Property_13B5F561_Out_0 = _DissolveAmount;
                 float _Property_D9FE9E5B_Out_0 = _NoiseScale;
                 float _GradientNoise_A24D9016_Out_2;
@@ -196,7 +199,7 @@
                 float4 _Multiply_1337220_Out_2;
                 Unity_Multiply_float(_Multiply_6A3F98AE_Out_2, (_Property_B444661D_Out_0.xxxx), _Multiply_1337220_Out_2);
                 float _Property_220EF9B_Out_0 = _DissolveAmount;
-                surface.Albedo = (_SampleTexture2D_CD2A3157_RGBA_0.xyz);
+                surface.Albedo = (_Multiply_EE7F5759_Out_2.xyz);
                 surface.Normal = IN.TangentSpaceNormal;
                 surface.Emission = (_Multiply_1337220_Out_2.xyz);
                 surface.Metallic = 0;
@@ -967,6 +970,11 @@
 
                         // Graph Functions
 
+                        void Unity_Multiply_float(float4 A, float4 B, out float4 Out)
+                        {
+                            Out = A * B;
+                        }
+
 
                         float2 Unity_GradientNoise_Dir_float(float2 p)
                         {
@@ -1006,11 +1014,6 @@
                             Out = A - B;
                         }
 
-                        void Unity_Multiply_float(float4 A, float4 B, out float4 Out)
-                        {
-                            Out = A * B;
-                        }
-
                         // Graph Vertex
                         // GraphVertex: <None>
 
@@ -1032,11 +1035,14 @@
                         SurfaceDescription SurfaceDescriptionFunction(SurfaceDescriptionInputs IN)
                         {
                             SurfaceDescription surface = (SurfaceDescription)0;
+                            float4 _Property_974E60FE_Out_0 = _AlbedoColor;
                             float4 _SampleTexture2D_CD2A3157_RGBA_0 = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, IN.uv0.xy);
                             float _SampleTexture2D_CD2A3157_R_4 = _SampleTexture2D_CD2A3157_RGBA_0.r;
                             float _SampleTexture2D_CD2A3157_G_5 = _SampleTexture2D_CD2A3157_RGBA_0.g;
                             float _SampleTexture2D_CD2A3157_B_6 = _SampleTexture2D_CD2A3157_RGBA_0.b;
                             float _SampleTexture2D_CD2A3157_A_7 = _SampleTexture2D_CD2A3157_RGBA_0.a;
+                            float4 _Multiply_EE7F5759_Out_2;
+                            Unity_Multiply_float(_Property_974E60FE_Out_0, _SampleTexture2D_CD2A3157_RGBA_0, _Multiply_EE7F5759_Out_2);
                             float _Property_13B5F561_Out_0 = _DissolveAmount;
                             float _Property_D9FE9E5B_Out_0 = _NoiseScale;
                             float _GradientNoise_A24D9016_Out_2;
@@ -1058,7 +1064,7 @@
                             float4 _Multiply_1337220_Out_2;
                             Unity_Multiply_float(_Multiply_6A3F98AE_Out_2, (_Property_B444661D_Out_0.xxxx), _Multiply_1337220_Out_2);
                             float _Property_220EF9B_Out_0 = _DissolveAmount;
-                            surface.Albedo = (_SampleTexture2D_CD2A3157_RGBA_0.xyz);
+                            surface.Albedo = (_Multiply_EE7F5759_Out_2.xyz);
                             surface.Emission = (_Multiply_1337220_Out_2.xyz);
                             surface.Alpha = _Step_17583DD3_Out_2;
                             surface.AlphaClipThreshold = _Property_220EF9B_Out_0;
@@ -1264,6 +1270,11 @@
 
                             // Graph Functions
 
+                            void Unity_Multiply_float(float4 A, float4 B, out float4 Out)
+                            {
+                                Out = A * B;
+                            }
+
 
                             float2 Unity_GradientNoise_Dir_float(float2 p)
                             {
@@ -1313,11 +1324,14 @@
                             SurfaceDescription SurfaceDescriptionFunction(SurfaceDescriptionInputs IN)
                             {
                                 SurfaceDescription surface = (SurfaceDescription)0;
+                                float4 _Property_974E60FE_Out_0 = _AlbedoColor;
                                 float4 _SampleTexture2D_CD2A3157_RGBA_0 = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, IN.uv0.xy);
                                 float _SampleTexture2D_CD2A3157_R_4 = _SampleTexture2D_CD2A3157_RGBA_0.r;
                                 float _SampleTexture2D_CD2A3157_G_5 = _SampleTexture2D_CD2A3157_RGBA_0.g;
                                 float _SampleTexture2D_CD2A3157_B_6 = _SampleTexture2D_CD2A3157_RGBA_0.b;
                                 float _SampleTexture2D_CD2A3157_A_7 = _SampleTexture2D_CD2A3157_RGBA_0.a;
+                                float4 _Multiply_EE7F5759_Out_2;
+                                Unity_Multiply_float(_Property_974E60FE_Out_0, _SampleTexture2D_CD2A3157_RGBA_0, _Multiply_EE7F5759_Out_2);
                                 float _Property_13B5F561_Out_0 = _DissolveAmount;
                                 float _Property_D9FE9E5B_Out_0 = _NoiseScale;
                                 float _GradientNoise_A24D9016_Out_2;
@@ -1325,7 +1339,7 @@
                                 float _Step_17583DD3_Out_2;
                                 Unity_Step_float(_Property_13B5F561_Out_0, _GradientNoise_A24D9016_Out_2, _Step_17583DD3_Out_2);
                                 float _Property_220EF9B_Out_0 = _DissolveAmount;
-                                surface.Albedo = (_SampleTexture2D_CD2A3157_RGBA_0.xyz);
+                                surface.Albedo = (_Multiply_EE7F5759_Out_2.xyz);
                                 surface.Alpha = _Step_17583DD3_Out_2;
                                 surface.AlphaClipThreshold = _Property_220EF9B_Out_0;
                                 return surface;
