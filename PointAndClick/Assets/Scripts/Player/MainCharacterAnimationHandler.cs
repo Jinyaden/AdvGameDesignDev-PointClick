@@ -7,12 +7,12 @@ public class MainCharacterAnimationHandler : MonoBehaviour
     private Animator animator;
 
     public GameObject playerPosition;
-    private Vector3 newPosition;
-    private Vector3 oldPosition;
+    public Vector3 newPosition;
+    public Vector3 oldPosition;
 
-    private Vector3 mainCharacterScale;
-    private float scaleLeft;
-    private float scaleRight;
+    public Vector3 mainCharacterScale;
+    public float scaleLeft;
+    public float scaleRight;
 
     public bool fixSpriteLeftGlitch = true;
     private bool spriteLeftGlitchFixed;
@@ -33,18 +33,18 @@ public class MainCharacterAnimationHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        oldPosition = playerPosition.transform.position;
+        newPosition = playerPosition.transform.position;
 
 
-        if ( oldPosition != newPosition )
+        if ( newPosition != oldPosition )
         {
             animator.SetBool("isWalking", true);
 
-            if ( oldPosition.x < newPosition.x )
+            if ( newPosition.x < oldPosition.x )
             {
                 mainCharacterScale.x = scaleLeft;
             }
-            else
+            if ( newPosition.x > oldPosition.x )
             {
                 mainCharacterScale.x = scaleRight;
             }
@@ -62,7 +62,7 @@ public class MainCharacterAnimationHandler : MonoBehaviour
         }
 
 
-        newPosition = playerPosition.transform.position;
+        oldPosition = playerPosition.transform.position;
         transform.localScale = mainCharacterScale;
     }
 }

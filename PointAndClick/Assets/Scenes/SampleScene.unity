@@ -705,6 +705,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410055, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410055, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410055, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410058, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: avoidancePriority
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410058, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410058, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410058, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_AutoBraking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410058, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410058, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5414004621506410059, guid: 653a5689e4460c54db58ac915eb0a36b,
         type: 3}
       propertyPath: m_Name
@@ -718,6 +763,11 @@ PrefabInstance:
     - target: {fileID: 8697372896680992441, guid: 653a5689e4460c54db58ac915eb0a36b,
         type: 3}
       propertyPath: fixSpriteLeftGlitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697372896680992441, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

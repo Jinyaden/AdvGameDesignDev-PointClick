@@ -9,7 +9,7 @@ public class ClickMovement : MonoBehaviour
 
     private void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();   
+        agent = GetComponent<NavMeshAgent>();  
     }
 
     private void Update()
