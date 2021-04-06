@@ -69,7 +69,7 @@ namespace COMP1288.PointClick.Jin
 
         public void LoadFromMainMenu()
         {
-            SceneToLoadByName("Forest");
+            SceneToLoadByName("Beach");
         }
 
         private bool TryGetFeature(out ScriptableRendererFeature feature)
