@@ -439,10 +439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1b0b3ab0825d1489f0d009a595a800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverTextPrefab: {fileID: 8729278990798699729, guid: e5e2252a8067896428ad77c46cf406e6,
-    type: 3}
-  messageToDisplay: Maybe I can use this!
-  heightOffsetAmount: 1
 --- !u!114 &394170762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c255dd12e6fe8642b4603ca19eff7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMat: {fileID: 2100000, guid: 4ae27c573604c074aaa02d841d1eaf84, type: 2}
 --- !u!1 &474018117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5414004621506410059, guid: 653a5689e4460c54db58ac915eb0a36b,
@@ -772,6 +767,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 653a5689e4460c54db58ac915eb0a36b, type: 3}
+--- !u!1 &1439616285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 336915696}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439616286}
+  m_Layer: 0
+  m_Name: ContextMenu (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439616286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 336915696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439616285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,10 +1042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5264cb0d5873b1e44add1c39b197ee2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatyText: {fileID: 8422864647769487527, guid: d635bff9b65811045a15b148e035e927,
-    type: 3}
-  shakeAmount: 0.1
-  shakeSpeed: 10
 --- !u!136 &1964288021
 CapsuleCollider:
   m_ObjectHideFlags: 0
