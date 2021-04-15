@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3752377125778866488
+--- !u!1 &3422515722698304356
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3752377125778866485}
-  - component: {fileID: 3752377125778866490}
-  - component: {fileID: 3752377125778866491}
+  - component: {fileID: 5700988480325717695}
+  - component: {fileID: 35505428827929759}
+  - component: {fileID: 8649548054799985384}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -18,27 +18,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &3752377125778866485
+--- !u!4 &5700988480325717695
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3752377125778866488}
+  m_GameObject: {fileID: 3422515722698304356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 173.4, y: 0, z: 229}
+  m_LocalPosition: {x: 183, y: 0, z: 228.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!218 &3752377125778866490
+--- !u!218 &35505428827929759
 Terrain:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3752377125778866488}
+  m_GameObject: {fileID: 3422515722698304356}
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: a8d579923536e3347954c34d222e3e50, type: 2}
@@ -65,13 +65,13 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
---- !u!154 &3752377125778866491
+--- !u!154 &8649548054799985384
 TerrainCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3752377125778866488}
+  m_GameObject: {fileID: 3422515722698304356}
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: a8d579923536e3347954c34d222e3e50, type: 2}
