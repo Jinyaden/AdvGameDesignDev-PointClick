@@ -32,7 +32,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {fileID: 2800000, guid: fe91e95fc8c8e6c4ba65634ea5c51c90, type: 3}
   contribution:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
     min: 0
     max: 1
