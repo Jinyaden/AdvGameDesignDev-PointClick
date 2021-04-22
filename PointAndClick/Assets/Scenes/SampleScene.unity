@@ -645,6 +645,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.54
       objectReference: {fileID: 0}
+    - target: {fileID: 5414004621506410052, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5414004621506410053, guid: 653a5689e4460c54db58ac915eb0a36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -758,12 +763,17 @@ PrefabInstance:
     - target: {fileID: 8697372896680992441, guid: 653a5689e4460c54db58ac915eb0a36b,
         type: 3}
       propertyPath: fixSpriteLeftGlitch
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697372896680992441, guid: 653a5689e4460c54db58ac915eb0a36b,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697372896680992441, guid: 653a5689e4460c54db58ac915eb0a36b,
+        type: 3}
+      propertyPath: tolerance
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 653a5689e4460c54db58ac915eb0a36b, type: 3}

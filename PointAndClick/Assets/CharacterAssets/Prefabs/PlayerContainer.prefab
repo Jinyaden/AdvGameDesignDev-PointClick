@@ -114,7 +114,7 @@ MonoBehaviour:
   mainCharacterScale: {x: 0, y: 0, z: 0}
   scaleLeft: 0
   scaleRight: 0
-  fixSpriteLeftGlitch: 1
+  tolerance: 0.03
 --- !u!95 &7227598262950448674
 Animator:
   serializedVersion: 3
@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 5414004621506410053}
   - component: {fileID: 5414004621506410058}
   - component: {fileID: 5414004621506410052}
+  - component: {fileID: 1121152103638410584}
   - component: {fileID: 5414004621506410054}
   - component: {fileID: 5414004621506410055}
   m_Layer: 0
@@ -201,6 +202,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d210f5c12fc0e41b31fd108c70f12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1121152103638410584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5414004621506410059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ceaa40261bb3447cb310b18918ff7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &5414004621506410054
