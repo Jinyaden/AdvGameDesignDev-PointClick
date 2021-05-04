@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7909457414458540112
+--- !u!114 &-813399849151782463
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: wall_base
+  m_Name: wall_arch_base
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _OCCLUSIONMAP
   m_LightmapFlags: 4
@@ -34,11 +34,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 6d618966a669537419460e5f5fde6d7b, type: 3}
+        m_Texture: {fileID: 2800000, guid: af30b6a7720f8b5489fc07c5c32630df, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 660f53b700dfad949b539d7636d4bca0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 74d0cefcde9739040896c573523565f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -46,15 +46,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6d618966a669537419460e5f5fde6d7b, type: 3}
+        m_Texture: {fileID: 2800000, guid: af30b6a7720f8b5489fc07c5c32630df, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: efe2fe5e102b54044903e73a31a3fd33, type: 3}
+        m_Texture: {fileID: 2800000, guid: daaae39170a5e4f49b086268054b8653, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 54e5dae1145a8c540b291d9b8cc21417, type: 3}
+        m_Texture: {fileID: 2800000, guid: 680d0e3a67784104ca97aeb95dc430ff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
